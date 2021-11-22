@@ -121,7 +121,7 @@
             <table>
                 <tr class="service">
                     <td class="tableitem"><p class="itemtext">رقم الفاتورة   </p></td>
-                    <td class="tableitem"><p class="itemtext">{{$order->id}}</p></td>
+                    <td class="tableitem"><p class="itemtext">{{$order->order_id}}</p></td>
                 </tr>
                 <tr class="service">
                     <td class="tableitem"><p class="itemtext">الاجمالى قبل الضريبة   </p></td>

@@ -15,7 +15,7 @@ class HomeApiController extends Controller
         $data = $this->validate(
             \request(),
             [
-                'id' => 'required|unique:orders',
+                'id' => 'required',
                 'amount' => 'required|numeric',
                 'tax' => 'required|numeric',
                 'total' => 'required|numeric',
@@ -25,7 +25,7 @@ class HomeApiController extends Controller
         );
 
         $order = new order;
-        $order->id = $request->id;
+        $order->order_id = $request->id;
         $order->amount = $request->amount;
         $order->tax = $request->tax;
         $order->total = $request->total;
